@@ -51,13 +51,13 @@ jobs:
     - name: Strip binary
       run: |
         ${{ github.workspace }}/.android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip \
-          target/aarch64-linux-android/release/xia_display_adaptor
+          target/aarch64-linux-android/release/brightd
 
     - name: Install UPX
       run: sudo apt-get install -y upx
 
     - name: Compress with UPX
-      run: upx --brute target/aarch64-linux-android/release/xia_display_adaptor
+      run: upx --brute target/aarch64-linux-android/release/brightd
 
     - name: Prepare Release Folder
       run: |
