@@ -64,7 +64,7 @@ jobs:
         mkdir -p release/vendor/bin/hw
         mkdir -p release/vendor/etc/init
         cp target/aarch64-linux-android/release/brightd release/vendor/bin/hw/brightd
-        cp brigthd.rc release/vendor/etc/init/
+        cp brightd.rc release/vendor/etc/init/
         cp LICENSE release/
         cp README.md release/
 
